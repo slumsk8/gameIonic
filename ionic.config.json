@@ -1,5 +1,7 @@
 {
   "name": "game8",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

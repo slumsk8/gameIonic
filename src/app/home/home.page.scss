@@ -1,31 +1,72 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
-}
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
+*{
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
 }
-
-#container a {
-  text-decoration: none;
+ion-content{    
+  --background: #555;
 }
-
-ion-content ion-toolbar {
-  --background: translucent;
+h3{
+	width: 30px;
+	color: white;
+}
+.tempo{
+	border: 3px solid white;
+	background-color: black;
+	margin: auto;
+	padding: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;	
+	justify-items: center;
+	width: 205px;
+	text-align: center;
+	margin-top: 50px;	
+}
+.panel{  
+  width: 305px;
+  height: 305px;
+  border-radius: 10px;
+}
+#startScreen{
+  background: url('../../assets/img/start.png');
+  opacity: 1;
+  z-index: 1;
+}
+#overScreen{
+  background: url('../../assets/img/win.png');
+  opacity: 0;
+  z-index: -1;
+}
+.modal{
+  position: absolute;
+  transition: all .5s;
+}
+#container{    
+  position: relative;
+  margin: 50px auto;
+  background-color: #ccc;
+  border: outset;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.score{
+  font-size: 18px;
+  text-align: center;    
+  margin-top: 10px;
+  color: white;
+}
+.tile{    
+  width: 90px;
+  height: 90px;
+  position: absolute;  
+  transition: left .5s, top .5s;
+}
+.tile:hover{
+  border: inset;
+  border-radius: 10px;
+}
+.botoes{
+  width: 205px;
+  height: 50px;
+  margin: auto;      
+  --border-radius: 20px;  
 }

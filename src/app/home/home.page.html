@@ -1,20 +1,31 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="ion-text-center" color="danger">
+    Game-8
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+<ion-content>
+  <div class="tempo">
+    <h3 id="minutes">0</h3>
+    <h3>:</h3>
+    <h3 id="secs">0</h3>
+  </div>
+  <div id="container" class="panel">
+    <div id="n1" class="tile" data-value="1"></div>
+    <div id="n2" class="tile" data-value="2"></div>
+    <div id="n3" class="tile" data-value="3"></div>
+    <div id="n4" class="tile" data-value="4"></div>
+    <div id="n5" class="tile" data-value="5"></div>
+    <div id="n6" class="tile" data-value="6"></div>
+    <div id="n7" class="tile" data-value="7"></div>
+    <div id="n8" class="tile" data-value="8"></div>
+    <div id="startScreen" class="panel modal" ></div>
+    <div id="overScreen" class="panel modal" ></div>
+  </div>     
+  <ion-button id="random" class="botoes" color="dark" expand="block" (click)="startGame()">START</ion-button>
+  <div class="score">
+    <span id="score"></span>
   </div>
 </ion-content>
